@@ -1,0 +1,282 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #cccccc;
+
+}
+
+.title-text {
+  font-size: 21px;
+}
+
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* хедер */
+.main-header {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 0 73px;
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+
+.navigation-list {
+  padding: 0;
+  width: 330px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: bold;
+}
+
+.navigation-list a {
+  color: rgb(0, 0, 0);
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+  color: #81b3d2;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+  color: #81b3d2;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -52px;
+  z-index: 15;
+}
+
+
+/* Мейн */
+.main-page {
+  background-color: #ffffff;
+  text-align: center;
+  display: block;
+}
+
+.sedona-intro {
+  position: relative;
+<<<<<<< HEAD
+  background-image: url("../img/background-img.jpg");
+=======
+  background-image: url("../img/background.jpg");
+>>>>>>> 522dd747b35dde4e04a444fe80bb099afeb35a16
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 72px;
+  padding-top: 77px;
+}
+
+.sedona-intro::after {
+  content: "";
+  width: 1200px;
+  height: 58px;
+  position: absolute;
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+  right: 0;
+  left: 0;
+  bottom: -1px;
+}
+
+.headline-small {
+  font-size: 21px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.features-row {
+  background-color: #81b3d2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+}
+
+.text-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+=======
+}
+
+.text-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+>>>>>>> 522dd747b35dde4e04a444fe80bb099afeb35a16
+.row-cell {
+  padding: 60px;
+}
+
+/* поле поиска */
+
+.hotels-search {
+  text-align: center;
+  line-height: 24px;
+  width: 568px;
+}
+
+.searchfield-top {
+  display: block;
+  width: 568px;
+  padding-top: 35px;
+  padding-bottom: 33px;
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #766357;
+}
+
+.search-button {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+/* страница поиска отелей */
+
+.hotels-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+ .hotel {
+   display: flex;
+ }
+
+.button-blue {
+  background-color: #81b3d2;
+  list-style: none;
+  color: #ffffff;
+}
+
+.button-brown {
+  background-color: #766357;
+  color: #ffffff;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  background-color: #503e33;
+ }
+
+/* Футер */
+
+.footer-contacts {
+  font-size: 21px;
+  font-weight: 700;
+}
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.902);
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.social-list  {
+  margin: 0, auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+justify-content: center;
+}
+
+.social-button {
+  background: #81b3d2 no-repeat center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  position: relative;
+}
+.social-button-twitter {
+  background-image: url(".../img/t.png");
+  position: relative;
+  background-repeat: no-repeat;
+/* я перебрала кучу вариантов как ее показать? */
+}
+
+.social-button-facebook {
+  background: #81b3d2 no-repeat center;
+}
+
+.social-button-youtube {
+  background: #81b3d2 no-repeat center;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+  background-color: #f669ec0;
+}
+/* ыть */
