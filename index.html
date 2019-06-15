@@ -154,10 +154,10 @@
             </label>
             <div class="experimental">
               <button type="button" class="btn btn-minus" name="adults-minus" aria-label="Убрать">
-                <img src="img/minus.svg" alt="Убрать"></button>
+                <img src="img/minus.svg" width="13" height="3" alt="Убрать"></button>
   <input id="adults" type="text" name="adults" value="2"/>
               <button type="button" class="btn" name="adults-plus" aria-label="Добавить">
-                <img src="img/plus.svg" alt="Добавить"></button>
+                <img src="img/plus.svg" width="11" height="11" alt="Добавить"></button>
               </div>
 
           </div>
@@ -168,10 +168,10 @@
                 </label>
                 <div class="experimental">
                   <button type="button" class="btn btn-minus" name="adults-minus" aria-label="Убрать">
-                    <img src="img/minus.svg" alt="Убрать"></button>
+                    <img src="img/minus.svg" width="13" height="3" alt="Убрать"></button>
   <input id="children" type="text" name="children" value="0"/>
           <button type="button" class="btn" name="adults-plus" aria-label="Добавить">
-              <img src="img/plus.svg" alt="Добавить"></button>
+              <img src="img/plus.svg" width="11" height="11" alt="Добавить"></button>
                   </div>
           </div>
         </div>
@@ -182,10 +182,28 @@
 
               </form>
               </div>
+              <div id="map" class="map"></div>
+              <script>
+                    var map;
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 34.868747, lng: -111.803307},
+                        zoom: 8
+                      });
+                    }
+                  </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB26lJFkiOq_rbZ0sIQbduyDPptMywHn6k&callback=initMap"  async defer></script>
 
-              <div class="map" style="width: 1200px;position: relative;"><iframe width="1200" height="593" src="https://maps.google.com/maps?width=1200&amp;height=593&amp;hl=en&amp;q=%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=p&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/pt/">Googlemapsgenerator.com/pt/</a> & <a href="http://eurodisneyaanbiedingen.nl/">eurodisneyaanbiedingen blog</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-            </div><br />
 
+<!--
+              <div class="map" style="width: 1200px;position: relative;">
+                <iframe width="1200" height="593" src="https://maps.google.com/maps?width=1200&amp;height=593&amp;hl=en&amp;q=%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=p&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+                  <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/pt/">Googlemapsgenerator.com/pt/</a> & <a href="http://eurodisneyaanbiedingen.nl/">eurodisneyaanbiedingen blog</a></small>
+                </div>
+                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+            </div><br /> -->
 
             </section>
 

@@ -878,3 +878,7 @@ background-color: #f669ec0;
   color: inherit;
 }
 /* есть какая то возможность центр картинки расположить по центру ссылки? */
+.map {
+  width: 1200px;
+  height: 600px;
+}
