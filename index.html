@@ -14,11 +14,11 @@
       <a class="header-logo">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
       </a>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-list-left">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo.html">Фото и Видео</a></li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list navigation-list-right">
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -34,8 +34,10 @@
     </div>
 
     <section class="sedona-features">
-      <h3 class="headline-small">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-      <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
+      <div class="sedona-features-intro">
+      <h3 class="headline-small">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
 
       <div class="features-list">
         <div class="features-row">
@@ -43,34 +45,33 @@
             <h3 class="headline-small">
               Настоящий городок
             </h3>
-            -№1-
-            <p>
-              Седона - не аттракцион для туристов, там течет своя жизнь
+            <p class="definitions-number">— №1 —</p>
+            <p class="definitions-text-first">
+            Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <figure class="image-definition">
           <img src="img/real-city.png" width="800" height="256" alt="sedona-shop">
-        </figure>
+
         </div>
 
-      <div class="text-row">
-        <div class="row-cell">
-          <img src="img/house.svg" alt="ЖИЛЬЁ">
-          <h3 class="headline-small"> Жильё </h3>
+      <div class="text-row first-text-row">
+        <div class="row-cell-first house-row">
+
+          <h3 class="headline-small">Жильё</h3>
           <p>
-            Рекомендуем пожить в настоящем мотеле, все как в кино!
+            Рекомендуем пожить в настоящем мотеле, всё как в кино!
           </p>
         </div>
-        <div class="row-cell">
-          <img src="img/burger.svg" alt="ЕДА">
-          <h3 class="headline-small"> Еда </h3>
+        <div class="row-cell-first burger-row">
+
+          <h3 class="headline-small">Еда</h3>
           <p>
             Всегда заказывайте фименный бургер, вы не разочаруетесь!
           </p>
         </div>
-       <div class="row-cell">
-        <img src="img/gift.svg" alt="СУВЕНИРЫ">
-         <h3 class="headline-small"> Сувениры </h3>
+       <div class="row-cell-first gift-row">
+
+         <h3 class="headline-small">Сувениры</h3>
          <p>
            Не только китайского, но и местного производства!
          </p>
@@ -78,41 +79,39 @@
     </div>
 
     <div class="features-row">
-      <figure class="image-definition">
         <img src="img/devils-brige.png" width="800" height="256" alt="devils brige">
-      </figure>
       <div class="sedona-definitions">
         <h3 class="headline-small">
           Там есть мост дьявола
         </h3>
-        -№2-
-        <p>
+        <p class="definitions-number">— №2 —</p>
+        <p class="definitions-text-second">
           Да, по нему можно пройти! Если конечно вы осмелитесь
         </p>
       </div>
     </div>
 
-    <div class="text-row">
-      <div class="row-cell">
-        <h3 class="headline-small"> Небольшая площадь </h3>
-        -№3-
+    <div class="text-row second-text-row">
+      <div class="row-cell-second">
+        <h3 class="headline-small">Небольшая площадь</h3>
+        <p class="definitions-number">— №3 —</p>
         <p>
           Все достопримечательности находятся очень близко
         </p>
       </div>
-      <div class="row-cell">
+      <div class="row-cell-second">
         <h3 class="headline-small"> Красивая дорога </h3>
-        -№4-
+        <p class="definitions-number">— №4 —</p>
         <p>
           Ехать в седону из лас вегаса совсем не скучно!
         </p>
       </div>
-     <div class="row-cell">
+     <div class="row-cell-second">
        <h3 class="headline-small"> Мало туристов </h3>
-       -№5-
-       <p>
+        <p class="definitions-number">— №5 —</p>
+        <p>
          Большинство едет в гранд каньон и толпится там
-       </p>
+        </p>
      </div>
   </div>
 
@@ -121,66 +120,79 @@
     </section>
 
     <section class="sedona-searchfield">
-      <h2>Заинтересовались?</h2>
-      <p>
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-        гостиниц в Седоне
+       <h2 class="searchfield-head">Заинтересовались?</h2>
+      <p class="searchfield-intro">
+Укажите предполагаемые даты поездки,
+<br> и мы покажем вам лучшие предложения гостиниц
+в Седонe
       </p>
 
-      <form class="hotels-search" action=action="https://echo.htmlacademy.ru" method="post">
+
         <a href="#" class="searchfield-top">Поиск гостиницы в Седонe</a>
-
-
-        <fieldset class="search-field-main">
+<div class="hotels-search-wrapper">
+<form class="hotels-search" action=action="https://echo.htmlacademy.ru" method="post">
+        <!-- <fieldset class="search-field-main"> -->
+      <div class="row-wrapper">
+        <div class="row-width row-width-in">
           <label for="date-in">
-            <span class="searchfield-main-span">Дата Заезда</span>
+            <span class="searchfield-main-span">Дата Заезда:</span>
           </label>
-          <input id="date-in" type="text" name="date-in" value="today">
-
+          <input id="date-in" type="text" name="date-in" value="24 апреля 2017">
+          <span class="date-in-after"></span>
+        </div>
+        <div class="row-width row-width-out">
           <label for="date-out">
-            <span class="searchfield-main-span">Дата Выезда</span>
+            <span class="searchfield-main-span">Дата Выезда:</span>
           </label>
-          <input id="date-out" type="text" name="date-out" value="tomorrow">
-
-          <div class="half-whidth">
+          <input id="date-out" type="text" name="date-out" value="4 июля 2017">
+          <span class="date-out-after"></span>
+        </div>
+        <div class="row-width adults-children-row">
+          <div class="half-width">
             <label for="adults">
-              <span class="searchfield-main-span">Взрослые</span>
+              <span class="searchfield-main-span adults-span">Взрослые:</span>
             </label>
-            <button type="button" name="adults-plus" aria-label="Добавить">
-              <img src="img/minus.svg" alt="Добавить"></button>
-
-              <button type="button" name="adults-minus" aria-label="Убрать">
-                <img src="img/plus.svg" alt="Убрать"></button>
-
-                <input id="adults" type="text" name="adults" value="2" max="9" min="0">
+            <div class="experimental">
+              <button type="button" class="btn btn-minus" name="adults-minus" aria-label="Убрать">
+                <img src="img/minus.svg" alt="Убрать"></button>
+  <input id="adults" type="text" name="adults" value="2" max="9" min="0"/>
+              <button type="button" class="btn" name="adults-plus" aria-label="Добавить">
+                <img src="img/plus.svg" alt="Добавить"></button>
               </div>
-              <div class="half-whidth">
+
+          </div>
+          <div class="half-width">
+
                 <label for="children">
-                  <span class="searchfield-main-span">Дети</span>
+                  <span class="searchfield-main-span">Дети:</span>
                 </label>
-                <button type="button" name="adults-plus" aria-label="Добавить">
-                  <img src="img/minus.svg" alt="Добавить"></button>
-
-                  <button type="button" name="adults-minus" aria-label="Убрать">
-                    <img src="img/plus.svg" alt="Убрать"></button>
-
-                    <input id="children" type="text" name="children" value="0" max="9" min="0">
+                <div class="experimental">
+                  <button type="button" class="btn btn-minus" name="adults-minus" aria-label="Убрать">
+                    <img src="img/minus.svg" alt="Убрать"></button>
+  <input id="children" type="text" name="children" value="0" max="9" min="0"/>
+          <button type="button" class="btn" name="adults-plus" aria-label="Добавить">
+              <img src="img/plus.svg" alt="Добавить"></button>
                   </div>
-
-                </fieldset>
-                <button class="button search-button" type="submit" name="searchbutton">
-                  <span class="title-text">Найти</span>
-                </button>
+          </div>
+        </div>
+      </div>
+                  <button class="button search-button" type="submit" name="searchbutton">
+                    <span class="title-text">Найти</span>
+                  </button>
+                <!-- </fieldset> -->
 
               </form>
-              <div class="map">
               </div>
+
+              <div class="map" style="width: 1200px;position: relative;"><iframe width="1200" height="593" src="https://maps.google.com/maps?width=1200&amp;height=593&amp;hl=en&amp;q=%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=p&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/pt/">Googlemapsgenerator.com/pt/</a> & <a href="http://eurodisneyaanbiedingen.nl/">eurodisneyaanbiedingen blog</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+            </div><br />
+
 
             </section>
 
 
           </main>
-
+<!-- КАК НАТЯНУТЬ ФУТЕР НА КАРТУ -->
           <footer class="main-footer">
             <p class="footer-contacts">
               #VISITSEDONA
@@ -189,11 +201,9 @@
               <div class="social-list">
                 <a class="social-button social-button-twitter" href="#" aria-label="Мы в Твиттер">
                 </a>
-              <a class="social-button social-button-facebook" href="#" aria-label="Наша страница на Фейсбук">
-                  <img src="img/facebook.svg" alt="facebook">
+                <a class="social-button social-button-facebook" href="#" aria-label="Наша страница на Фейсбук">
                 </a>
                 <a class="social-button social-button-youtube" href="#" aria-label="Наш Ютуб-канал">
-                  <img src="img/youtube.svg" alt="youtube">
                 </a>
               </div>
             </div>
