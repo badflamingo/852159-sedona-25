@@ -29,7 +29,7 @@ box-sizing: inherit;
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 5px #cccccc;
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
   position: relative;
 
 }
@@ -75,7 +75,7 @@ box-sizing: inherit;
   width: 1200px;
   padding-top: 3;
   padding-bottom: 4px;
-  padding-left: 73px;
+  padding-left: 71px;
   padding-right: 73px;
   box-sizing: border-box;
   -webkit-box-orient: horizontal;
@@ -99,17 +99,25 @@ box-sizing: inherit;
 }
 
 .navigation-list li {
-  max-width: 300px;
+width: 242px;
 }
 
 .navigation-list-left {
-margin-right: 100px;
+  text-align: left;
 }
 
 .navigation-list-right {
-margin-left: 100px;
+  text-align: right;
 }
 
+.navigation-photo {
+flex-grow: 1;
+}
+
+.navigation-statemap {
+ /* margin-right: 100px; */
+flex-grow: 1;
+}
 
 .navigation-list a {
   color: rgb(0, 0, 0);
@@ -628,7 +636,7 @@ font-weight: 400;
 }
 
 .infrastructure-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "\2714";
+  content: "\2713";
   position: absolute;
   top: -5px;
   left: 2px;
@@ -928,7 +936,7 @@ margin-top: -4px;
  }
 
 .hotel-class {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .button-blue {
@@ -983,12 +991,16 @@ display: flex;
 align-items: flex-end;
 flex-grow: 1;
 min-width: 110px;
+margin-top: -5px;
  }
 
  .hotel-rate {
    background-color: #f2f2f2;
    padding-left: 13px;
    padding-right: 13px;
+   margin-top: 15px;
+   padding-top: 3px;
+   padding-bottom: 3px;
  }
 
 .stars {
@@ -996,6 +1008,7 @@ min-width: 110px;
   color: #81b3d2;
   letter-spacing: -0.01em;
   align-items: flex-start;
+
 }
 
 /* Футер */
@@ -1007,8 +1020,8 @@ min-width: 110px;
   -webkit-box-pack: justify;
           justify-content: space-between;
   width: 1200px;
-  padding-top: 29px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 34px;
   /* padding-left: 132px;
   padding-right: 105px; */
   line-height: 21px;
@@ -1121,4 +1134,34 @@ background-color: #669ec0;
   background-repeat: no-repeat;
   width: 1200px;
   height: 595px;
+}
+
+@keyframes move {
+  from {
+    height: 0%;}
+  to {
+    height: 395px;}
+}
+
+/* @keyframes close {
+  from {
+    height: 100%;}
+  to {
+    height: 0%;}
+} */
+
+.hotels-search-wrapper {
+  animation-name: move;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* .hotels-search {
+  animation-name: move;
+  animation-duration: 2.2s;
+  animation-timing-function: ease-in-out;
+} */
+
+.hotels-search-wrapper-hide {
+  display: none;
 }
