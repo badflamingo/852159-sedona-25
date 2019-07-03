@@ -1,42 +1,41 @@
 var searchfield = document.querySelector(".searchfield-top");
-
-var popup  = document.querySelector(".hotels-search-wrapper");
-
+var popup = document.querySelector(".hotels-search-wrapper");
 var form = popup.querySelector(".hotels-search");
 var dateIn = popup.querySelector("[name=date-in]");
 var dateOut = popup.querySelector("[name=date-out]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
-
+var visible = document.querySelector(".hotels-search-wrapper-visible");
 var isStorageSupport = true;
 var storage = "";
 
 try {
   storage = llocalStorage.getItem("adults");
-} catch (err) {
+}
+catch (err) {
   isStorageSupport = false;
 }
-
 try {
   storage = llocalStorage.getItem("children");
-} catch (err) {
+}
+catch (err) {
   isStorageSupport = false;
 }
-
+function myFunction() {
+  popup.classList.remove("hotels-search-wrapper-visible");
+  popup.classList.add("hotels-search-wrapper-hide");
+}
+myFunction()
 searchfield.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if(popup.classList.contains("hotels-search-wrapper-visible"))
-  {
+  if (popup.classList.contains("hotels-search-wrapper-visible")) {
     popup.classList.add("hotels-search-wrapper-hide");
     popup.classList.remove("hotels-search-wrapper-visible");
   }
-  else
-  {
+  else {
     popup.classList.add("hotels-search-wrapper-visible");
     popup.classList.remove("hotels-search-wrapper-hide");};
-  });
-
-
+  })
   form.addEventListener("submit", function (evt) {
     if (!adults.value || !children.value) {
       evt.preventDefault();
@@ -48,4 +47,4 @@ searchfield.addEventListener("click", function (evt) {
         localStorage.setItem("children", children.value);
       }
     }
-  });
+  })
